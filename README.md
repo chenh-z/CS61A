@@ -25,6 +25,14 @@ There are some instruction to use VSCode to open files in WSL.
 
 [Insturction for opening files in VSCode](https://code.visualstudio.com/docs/remote/wsl#_open-a-remote-folder-or-workspace)
 
+### step 4 : Try to use VSCode like a WSL terminal
+
+What we just to do is:
+
+Type　` wsl ` in windows powershell, then type ` code .`
+
+
+
 ### Some WSL Instruction in Chinese 
 
 [Chinese WSL Instruction](https://mp.weixin.qq.com/s?__biz=MzA3NjY2NzY1MA==&mid=2649740495&idx=1&sn=a7c98cc5db24a572ce78b24f581fe425&chksm=8746baa2b03133b467dd869409f6cf45a5e4438a6e3f8368372806ad45ff6933923b2946eb93&scene=27)
