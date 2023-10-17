@@ -84,8 +84,9 @@ Type ` mv A B `
 
 ### Review Python basics 
 
+### Finish Lab
 
-
+Following the instruction in lab00.py, and type ` python3 ok ` when in lab00.
 
 ### Some WSL Instruction in Chinese 
 
