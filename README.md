@@ -58,10 +58,34 @@ command : short of change directory
 
 #### 3 : Making new directories
 
-Now I wanna create a CS61A directory to save my note and code in CS61Aa, just type ` 
+Now I wanna create a CS61A directory to save my note and code in CS61Aa, just type ` mkdir cs61a ` in the directory which I wanna create cs61a.
+
+mkdir : short of making new directory
+
+#### 4 :  More directory changing
+
+` cd .. ` : return to the parent directory. ` .. ` means **the parent directory**
+
+` cd ~ ` ： return to the home directory. ` ~ ` means the home directory
+
+#### 5 ： Downlanding the assignment
+
+If we've already downloaded ` lab00.zip`. type ` ls ~/Downloads ` to check whether the zip is in Downloads.
+
+#### 6 ： Extracting starter files ( to unzip .zip files )
+
+too lazy to install unzip in powershell
+
+#### 7 : Moving files
+
+When move a from A to B ( A and B is directories )
+
+Type ` mv A B `
+
+### Review Python basics 
 
 
-#### 2 : 
+
 
 ### Some WSL Instruction in Chinese 
 
