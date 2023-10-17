@@ -40,6 +40,27 @@ First make sure we are in wsl(Windows) or Terminal（MacOS).
 
 ` echo $HOME`
 
+### Walkthrough : Organizing your files
+
+#### 1 : Directories
+
+type ` ls ` to look through files in this directory
+
+ls : short of list
+
+Caution : Since I have my dell initialization in Japanese and setup backup, my path of desktop is `~/Onedrive/デスクトップ　`
+
+#### 2 : Changing directories
+
+My home directory is `/home/aki `, type ` cd /home/aki' to enter the home directory.
+
+command : short of change directory
+
+#### 3 : Making new directories
+
+Now I wanna create a CS61A directory to save my note and code in CS61Aa, just type ` 
+
+
 #### 2 : 
 
 ### Some WSL Instruction in Chinese 
