@@ -78,6 +78,8 @@ indentation 行首缩进
 
 integration 一体化
 
+intrinsic 固有的
+
 
 ### N
 
@@ -115,6 +117,8 @@ stipulate 规定
 stuff 原料
 
 subexpression 子表达式
+
+substitution 代换
 
 syntax 句法
 
