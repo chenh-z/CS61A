@@ -127,3 +127,23 @@ m = 2
 
 ### Q4 Hailstone
 
+Ans : 
+```
+   step = 1
+    print(n)
+    while n != 1 :
+        if n % 2 == 0 :
+            n  = (int)(n / 2) 
+            print(n)
+        else :
+            n = (int)(n * 3 + 1) 
+            print(n)
+        step = step + 1 ;
+    return step;
+```
+#### Caution : 
+
+##### format of print
+
+##### return is not print 
+
