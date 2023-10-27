@@ -92,3 +92,38 @@ Following the instruction in lab00.py, and type ` python3 ok ` when in lab00.
 
 [Chinese WSL Instruction](https://mp.weixin.qq.com/s?__biz=MzA3NjY2NzY1MA==&mid=2649740495&idx=1&sn=a7c98cc5db24a572ce78b24f581fe425&chksm=8746baa2b03133b467dd869409f6cf45a5e4438a6e3f8368372806ad45ff6933923b2946eb93&scene=27)
 
+
+## HW1
+
+### Q1 A Plus Abs B
+
+Ans: sub add
+
+Caution: the f is the operator
+
+### Q2 Two of Three
+
+Ans ：`(i*i+j*j+k*k-max(i,j,k)*max(i,j,k));`
+
+### Q3 : Largest Factor
+
+Ans:
+
+```
+m = 2
+    while m < n :
+        if n % m == 0 :
+            return (int)(n / m)
+        else :
+            m = m + 1       
+    return 1;
+```
+
+#### Caution
+
+·format of python
+
+·transform double to int when return
+
+### Q4 Hailstone
+
