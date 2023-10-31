@@ -252,4 +252,7 @@ python3 ok -q <specified function>
 
 [CITE](https://inst.eecs.berkeley.edu/~cs61a/fa22/lab/lab01/#required-questions)
 
+#### Q6
+
+Caution: Remeber to transform double to int because **python will transform int to double automatically**
 
