@@ -147,3 +147,48 @@ Ans :
 
 ##### return is not print 
 
+
+## Lab01
+
+### Q2
+
+```
+ def how_big(x):
+...     if x > 10:
+...         print('huge')
+...     elif x > 5:
+...         return 'big'
+...     elif x > 0:
+...         print('small')
+...     else:
+...         print("nothing")
+>>> how_big(7)
+? big
+-- Not quite. Try again! --
+
+? none
+-- Not quite. Try again! --
+
+? 'big'
+-- OK! --
+```
+Caution: return is not print
+
+```
+ positive = 28
+>>> while positive: # If this loops forever, just type Infinite Loop
+...    print("positive?")
+...    positive -= 3
+(line 1)? positive?
+-- Not quite. Try again! --
+
+(line 1)? 28?
+-- Not quite. Try again! --
+
+(line 1)? Infinite Loop
+-- OK! --
+```
+Caution: **Only** while 0 will terminate the while loop
+
+
+
