@@ -190,5 +190,66 @@ Caution: return is not print
 ```
 Caution: **Only** while 0 will terminate the while loop
 
+### Q3
+
+#### S1C1
+
+```
+ True and 13
+? 1
+-- Not quite. Try again! --
+
+? True
+-- Not quite. Try again! --
+
+? 0001
+-- Not quite. Try again! --
+
+? 14
+-- Not quite. Try again! --
+
+? 13
+-- OK! --
+```
+Caution: 
+1.and,or,not calculate from left to right.
+2.When and and both true(include int not zero), return the rightest value
+3.When or and all false, return the latest value
+```
+Boolean operators
+使用 and、or、not
+
+注意and和or都是从左到右计算，如and左边为False就返回该False值了
+
+并且这里返回的True或者False不一定是Bool值，如 8 and 9 会返回9
+
+and中，如果所有值都为True，返回最后一个值
+
+or中，如果所有值都为False，也返回最后一个值
+```
+[参考文献](https://www.cnblogs.com/lcyfrog/p/17020967.html#cs61a%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-week2)
+
+#### S1C7
+
+```
+
+Q: What is the best way to look at an environment diagram to investigate a failing test for question sum_digits in assignment lab01?
+Choose the number of the correct choice:
+0) python3 ok -q sum_digits
+1) python3 ok -q sum_digits --trace
+2) python3 ok -q sum_digits -i
+3) python3 -i lab01.py
+? 1
+-- OK! --
+```
+```
+You can quickly generate most ok commands at ok-help.
+
+To use Ok to run doctests for a specified function, run the following command:
+
+python3 ok -q <specified function>
+```
+
+[CITE](https://inst.eecs.berkeley.edu/~cs61a/fa22/lab/lab01/#required-questions)
 
 
