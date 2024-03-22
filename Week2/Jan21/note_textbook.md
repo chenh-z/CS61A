@@ -7,11 +7,22 @@ True value: all other numbers
 #### Boolean Opreators
 ##### And
 Order: e.g. <left> and <right>
+
 1.Calculate left. If false, return false
+
 2.Calculate right. If false, return false
+
 3.Return true
 ##### Or
 Order: e.g. <left> and <right>
+
 1.Calculate left. If true, return true.
+
 2.Calculate right. If true, return true.
+
 3.Return False
+#### 1.5.5   Iteration
+pred, curr = curr, pred + curr pred and curr is calculated in the same time
+
+When infinite loop: type Control+C to stop
+
