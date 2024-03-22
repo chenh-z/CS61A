@@ -25,4 +25,15 @@ Order: e.g. <left> and <right>
 pred, curr = curr, pred + curr pred and curr is calculated in the same time
 
 When infinite loop: type Control+C to stop
+#### 1.5.6 Testing
+##### Assertions
+e.g.
+`assert fib(8) == 13`
 
+If true, no effect.
+
+If false, error.
+
+##### Doctests
+
+`python3 -m doctest <python_source_file>`
