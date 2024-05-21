@@ -32,26 +32,31 @@ def product(n, term):
     162
     """
     "*** YOUR CODE HERE ***"
-    def identity(n):
-        sum,i=1,1
-        while i <= n :
-            sum*=i
-            i+=1
-        return sum
-    def square(n):
-        return n*n
-    def increment(n):
-        sum,i=1,1
-        while i<=n:
-            sum*=(i+1)
-            i+=1
-        return sum
-    def triple(n):
-        sum,i=1,1
-        while i<=n:
-            sum*=i*3
-            i+=1
-        return sum;
+    i , result = 1 , 1
+    while i <= n :
+        result = term(i) * result
+        i += 1
+    return result
+    # def identity(n):
+    #     sum,i=1,1
+    #     while i <= n :
+    #         sum*=i
+    #         i+=1
+    #     return sum
+    # def square(n):
+    #     return n*n
+    # def increment(n):
+    #     sum,i=1,1
+    #     while i<=n:
+    #         sum*=(i+1)
+    #         i+=1
+    #     return sum
+    # def triple(n):
+    #     sum,i=1,1
+    #     while i<=n:
+    #         sum*=i*3
+    #         i+=1
+    #     return sum
 
 
 def accumulate(fuse, start, n, term):
@@ -74,19 +79,23 @@ def accumulate(fuse, start, n, term):
     19
     """
     "*** YOUR CODE HERE ***"
-    def add(start,n,term):
-        def identity(start,n):
-            sum,i=start,1
-            while i<=n:
-                sum+=i
-                i+=1
-            return sum
-        def square(start,n):
-            sum,i=start,1
-            while i<=n:
-                sum+=i*i
-                i+=1
-            return sum
+    i , result = 1, start
+    while i <= n :
+        result , i = fuse( result , term(i) ) , i + 1
+    return result
+    # def add(start,n,term):
+    #     def identity(start,n):
+    #         sum,i=start,1
+    #         while i<=n:
+    #             sum+=i
+    #             i+=1
+    #         return sum
+    #     def square(start,n):
+    #         sum,i=start,1
+    #         while i<=n:
+    #             sum+=i*i
+    #             i+=1
+    #         return sum
 
 def summation_using_accumulate(n, term):
     """Returns the sum: term(1) + ... + term(n), using accumulate.
@@ -100,7 +109,7 @@ def summation_using_accumulate(n, term):
     >>> [type(x).__name__ for x in ast.parse(inspect.getsource(summation_using_accumulate)).body[0].body]
     ['Expr', 'Return']
     """
-    return ____
+    return accumulate(add,0,n,term)
 
 
 def product_using_accumulate(n, term):
@@ -115,7 +124,7 @@ def product_using_accumulate(n, term):
     >>> [type(x).__name__ for x in ast.parse(inspect.getsource(product_using_accumulate)).body[0].body]
     ['Expr', 'Return']
     """
-    return ____
+    return accumulate(mul,1,n,term)
 
 
 def make_repeater(f, n):
@@ -132,4 +141,13 @@ def make_repeater(f, n):
     390625
     """
     "*** YOUR CODE HERE ***"
-
+    def repeater(k):
+        i = 1
+        while i <= n :
+            k , i = f(k) , i + 1
+        return k
+    return repeater
+    # i , result = 2 , f(k)
+    # while i <= n :
+    #     result , i = f(result) , i + 1
+    # return
