@@ -9,5 +9,6 @@ The interactive Python interpreter does not automatically print the value None
 
 #### 1.3.7 Operator
 
-/ : double divide
-// : int divide
+/ : true divide
+
+// : floor divide
