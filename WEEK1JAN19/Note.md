@@ -6,3 +6,8 @@ With multiple assignment, all expressions to the right of = are evaluated before
 
 #### 1.2.6 The Non-Pure Print Function
 The interactive Python interpreter does not automatically print the value None
+
+#### 1.3.7 Operator
+
+/ : double divide
+// : int divide
